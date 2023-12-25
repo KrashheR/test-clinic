@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  &__number {
+    color: $text-primary-color;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

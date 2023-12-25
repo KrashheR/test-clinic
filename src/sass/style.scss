@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'PTSansCaption';
+  src: url(../fonts/PTSansCaption.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PTSansCaption';
+  src: url(../fonts/PTSansCaption-Bold.woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'PTSansCaption', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: 'PTSansCaption', sans-serif;
+  font-weight: 400;
+}
+
+body, p, h1, h2, h3, ul {
+  margin: 0;
+  padding: 0;
+}
