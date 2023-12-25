@@ -1,0 +1,29 @@
+.address {
+  display: flex;
+  gap: 3px;
+
+  &__left-side{
+    align-self: flex-start;
+  }
+
+  &__right-side{
+    display: flex;
+    flex-direction: column;
+    color: $text-primary-color;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__city {
+    color: $text-primary-color;
+  }
+
+  &__additional-info {
+    color: $text-secondary-color;
+  }
+}

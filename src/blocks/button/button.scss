@@ -1,0 +1,18 @@
+.button {
+  width: 196px;
+  height: 43px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50px;
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $button-bg-hover-color;
+  }
+}
+
