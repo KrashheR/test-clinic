@@ -15,6 +15,11 @@
   <div class="container">
     <div class="header__top">
       <div class="header__top-left">
+        <div class="hamburger">
+          <span class="top-bar"></span>
+          <span class="mid-bar"></span>
+          <span class="bot-bar"></span>
+        </div >
         <img class="logo" src="images/logoGreen.svg" alt="Логотип компании">
         <div class="address">
           <div class="address__left-side"><img class="address__icon" src="images/placeholder.svg" alt="Местоположение"></div>
@@ -28,8 +33,9 @@
         <div class="contact">
           <img src="images/whatsapp.svg" alt="WhatsApp" class="contact__icon">
           <p class="contact__number">+7(863) 000 00 00</p>
+          <p class="contact__city">Ростов-на-Дону</p>
       </div>
-      <button class="button">Записаться на прием</button>
+      <button class="button button_header-desktop">Записаться на прием</button>
       </div>
     </div>
   </div>
@@ -53,12 +59,58 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
+        <button class="button button_header-mobile">Записаться на прием</button>
       </nav>
     </div>
   </div>
 </header>
-  <main>
-  </main>
+<main>
+  <section class="clinic-info">
+    <img class="clinic-info__image" src="/images/clinicPhoto.webp" alt="Фотография клиники">
+    <div class="container">
+      <div class="clinic-info__content">
+        <h1 class="clinic-info__title">Многопрофильная клиника для детей и взрослых</h1>
+        <p class="clinic-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="services-card">
+      <img class="services-card__image" src="/images/doctor.webp" alt="Фотография услуги"/>
+      <div class="services-card__content">
+        <h3 class="services-card__title">Check-UP</h3>
+        <p class="services-card__subtitle">для мужчин</p>
+        <ul class="services-card__list">
+          <li class="services-card__list-item">Гормональный скрининг</li>
+          <li class="services-card__list-item">Тестостерон</li>
+          <li class="services-card__list-item">Свободный тестостерон</li>
+          <li class="services-card__list-item">Глобулин, связывающий половые гормоны</li>
+        </ul>
+        <div class="services-card__pricing">
+          <span class="services-card__price">Всего 2800₽</span>
+          <span class="services-card__old-price">3500₽</span>
+        </div>
+        <div class="services-card__buttons">
+          <button class="button">Записаться</button>
+          <button class="button button_details">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <div class="services__navigation">
+      <a class="services__nav-button services__nav-button_left">
+        <img src="/images/leftArrow.svg" alt="Кнопка назад">
+      </a>
+      <div class="services__card-numbers">
+        <span class="services__card-current">1</span>
+        <span class="services__card-total">/4</span>
+      </div>
+      <a class="services__nav-button services__nav-button_right">
+        <img src="/images/rightArrow.svg" alt="Кнопка вперед">
+      </a>
+    </div>
+  </section>
+
+</main>
 
   <footer>
 

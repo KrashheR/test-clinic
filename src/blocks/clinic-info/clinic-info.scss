@@ -1,0 +1,55 @@
+.clinic-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  background-color: $background-gray-color;
+
+  @media (min-width: $screen-laptop) {
+    background-color: $background-gray-color;
+  }
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 36px);
+    gap: 9px;
+    padding-bottom: 53px;
+
+    @media (min-width: $screen-laptop) {
+      gap: 14px;
+    }
+  }
+
+  &__title {
+    color: $text-black-color;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 267px;
+
+    @media (min-width: $screen-laptop) {
+      font-size: 36px;
+    }
+  }
+
+  &__description {
+    color: $text-black-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 304px;
+
+    @media (min-width: $screen-laptop) {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    width: 100vw;
+    height: 288px;
+    object-fit: cover;
+  }
+}

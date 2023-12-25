@@ -1,17 +1,42 @@
 .contact {
   display: flex;
-  align-items: center;
-  gap: 9px;
+  flex-direction: column;
+
+  @media (min-width: $screen-laptop) {
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+  }
 
   &__icon {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
+    display: none;
+
+    @media (min-width: $screen-laptop) {
+      display: block;
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
   }
 
   &__number {
-    color: $text-primary-color;
+    color: $text-black-color;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 700;
+
+    @media (min-width: $screen-laptop) {
+      font-weight: 400;
+    }
+  }
+
+  &__city {
+    color: $text-black-color;
+    text-align: right;
+    font-size: 13px;
+
+    @media (min-width: $screen-laptop) {
+      display: none;
+    }
   }
 }

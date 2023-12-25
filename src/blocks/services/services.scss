@@ -1,0 +1,38 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 49px;
+  padding-bottom: 41px;
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    gap: 36px;
+
+    &__nav-button {
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      img{
+        width: 34px;
+        height: 34px;
+      }
+    }
+  }
+
+  &__card-numbers {
+    display: flex;
+  }
+
+  &__card-current {
+    color: $text-black-color;
+  }
+
+  &__card-total {
+    color: $text-gray-color;
+  }
+}

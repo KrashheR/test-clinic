@@ -1,5 +1,9 @@
 .logo {
-  width: 91.043px;
-  height: 26.901px;
-  flex-shrink: 0;
+  width: 62px;
+  height: 18.32px;
+
+  @media (min-width: $screen-laptop) {
+    width: 91.043px;
+    height: 26.901px;
+  }
 }

@@ -1,18 +1,24 @@
-$text-primary-color: #364844;
-$text-secondary-color: #868686;
+$text-black-color: #364844;
+$text-gray-color: #868686;
 $text-white-color: #FFF;
+$text-green-color: #0DBC91;
 
 $background-white-color: #FFF;
+$background-white-mobile-color: #F6F6F6;
 $background-green-color: #1FA181;
+$background-green-opacity-color: rgba(69, 146, 127, 0.90);
+$background-gray-color: #F8FBFA;
 
-$button-bg-color: #0DBC91;
-$button-text-color: #FFF;
+$button-green-bg-color: #0DBC91;
+$button-white-bg-color: #F8FBFA;
+$button-white-text-color: #FFF;
+$button-green-text-color: #1FA181;
 $button-bg-hover-color: #00D29F;
 
+$card-bg-color: #E2F0EF;
 
-
-$screen-ss:                340px;
-$screen-s:                 480px;
-$screen-m:                 652px;
-$screen-l:                 992px;
-$screen-xl:                1220px;
+$screen-mobileSmall:                340px;
+$screen-mobile:                 480px;
+$screen-tablet:                 652px;
+$screen-laptop:                 992px;
+$screen-desktop:                1200px;

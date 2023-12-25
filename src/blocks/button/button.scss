@@ -1,11 +1,11 @@
 .button {
-  width: 196px;
+  width: 50%;
   height: 43px;
   flex-shrink: 0;
   border: none;
   border-radius: 50px;
-  background-color: $button-bg-color;
-  color: $button-text-color;
+  background-color: $button-green-bg-color;
+  color: $button-white-text-color;
   font-size: 14px;
   line-height: 21px;
   cursor: pointer;
@@ -13,6 +13,36 @@
 
   &:hover {
     background-color: $button-bg-hover-color;
+  }
+
+  &_header-mobile {
+    display: block;
+    background-color: $button-white-bg-color;
+    color: $button-green-text-color;
+    font-weight: 700;
+
+    @media (min-width: $screen-laptop) {
+      display: none;
+    }
+  }
+
+  &_header-desktop {
+    display: none;
+
+    @media (min-width: $screen-laptop) {
+      display: block;
+    }
+  }
+
+  &_details {
+    background-color: transparent;
+    border: 2px solid $button-green-bg-color;
+    color: $text-green-color;
+
+    &:hover {
+      color: $text-white-color;
+      background-color: $button-green-bg-color;
+    }
   }
 }
 
