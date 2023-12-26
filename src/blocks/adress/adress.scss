@@ -1,12 +1,16 @@
 .address {
-  display: flex;
-  gap: 3px;
+  display: none;
 
-  &__left-side{
+  @media (min-width: $screen-laptop) {
+    display: flex;
+    gap: 3px;
+  }
+
+  &__left-side {
     align-self: flex-start;
   }
 
-  &__right-side{
+  &__right-side {
     display: flex;
     flex-direction: column;
     color: $text-black-color;

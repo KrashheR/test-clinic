@@ -1,6 +1,6 @@
 .header {
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 5;
   background-color: $background-white-color;
 
@@ -25,7 +25,7 @@
     }
   }
 
-  &__top-right{
+  &__top-right {
     display: flex;
     align-items: center;
     gap: 35px;

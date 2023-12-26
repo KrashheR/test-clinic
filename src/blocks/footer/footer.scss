@@ -1,6 +1,6 @@
 .footer {
   background-color: $background-dark-green-color;
-  padding: 42px 17px;
+  padding: 42px 0;
 
   @media (min-width: $screen-laptop) {
     padding-top: 54px;
@@ -32,8 +32,13 @@
   }
 
   &__social-link {
-    height: 35px;
-    width: 35px;
+    width: 24px;
+    height: 23px;
+
+    @media (min-width: $screen-laptop) {
+      width: 35px;
+      height: 35px;
+    }
   }
 
   &__social-image {

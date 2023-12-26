@@ -2,11 +2,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 340px;
+  width: 91vw;
   height: 536px;
   border-radius: 5px;
   overflow: hidden;
-
+  transition: all 0.3s ease-in 0.3s;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row-reverse;
@@ -20,33 +20,61 @@
     height: 440px;
   }
 
-  &__picture {
+  &__pictures-wrapper {
+    position: relative;
     height: 169px;
     width: 100%;
+    background-color: $card-bg-color;
+  }
+
+  &__picture {
+    position: absolute;
+    display: block;
+    height: 169px;
+    width: 100%;
+    z-index: 4;
+    transform: translateY(-200%);
+    transition: all 0.3s ease-in;
+    opacity: 0.4;
+
+    &_active {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(300%);
+
+      &_active {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
   }
 
   &__image {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     object-fit: cover;
 
     @media (min-width: $screen-tablet) {
       position: absolute;
       right: 0;
       width: 55vw;
-      height: 440px;
+      height: 439px;
     }
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       width: 692px;
-      height: 440px;
     }
   }
 
-  &__content {
+  &__content-wrapper {
     padding: 22px;
     height: 370px;
     background-color: $card-bg-color;
+    z-index: 2;
 
     @media (min-width: $screen-tablet) {
       position: absolute;
@@ -54,13 +82,34 @@
       width: 60vw;
       height: 440px;
       clip-path: polygon(0 0, calc(100% - 120px) 0, 100% 100%, 0 100%);
+      padding-left: 33px;
+      padding-top: 53.14px;
+      z-index: 6;
     }
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       width: 613px;
-      height: 440px;
       padding-left: 63px;
-      padding-top: 53.14px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    transform: translateY(200%);
+    transition: all 0.3s ease-in;
+    opacity: 0.4;
+
+    &_active {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+
+    @media (min-width: $screen-tablet) {
+      transform: translateY(-200%);
+
+      &_active {
+        transform: translateY(0%);
+      }
     }
   }
 
@@ -70,7 +119,7 @@
     font-weight: 700;
     text-transform: uppercase;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       font-size: 38px;
     }
   }
@@ -81,7 +130,7 @@
     font-weight: 700;
     margin-top: 5px;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       margin-top: 3px;
       font-size: 22px;
     }
@@ -95,7 +144,7 @@
     margin-top: 12px;
     gap: 8px;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       margin-top: 14px;
       gap: 6px;
     }
@@ -108,12 +157,17 @@
     line-height: 145%;
     color: $text-black-color;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-tablet) {
+      max-width: 300px;
+    }
+
+    @media (min-width: $screen-laptop) {
       font-size: 16px;
+      max-width: 100%;
     }
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -123,7 +177,7 @@
       border-radius: 50%;
       background-color: $background-green-color;
 
-      @media (min-width: $screen-desktop) {
+      @media (min-width: $screen-laptop) {
         transform: translateY(120%);
       }
     }
@@ -135,7 +189,7 @@
     gap: 10px;
     margin-top: 17px;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       gap: 15px;
       margin-top: 32px;
     }
@@ -145,7 +199,7 @@
     color: $text-black-color;
     font-size: 18px;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       font-size: 20px;
     }
   }
@@ -155,7 +209,7 @@
     font-size: 14px;
     text-decoration: line-through;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       font-size: 16px;
     }
   }
@@ -165,8 +219,54 @@
     margin-top: 27px;
     gap: 6px;
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       gap: 14px;
     }
+
+    @media (max-width: $screen-mobileSmall) {
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &.slide-left {
+    animation: slideLeft 0.5s forwards;
+  }
+
+  &.slide-right {
+    animation: slideRight 0.5s forwards;
+  }
+
+  &.slide-out-left {
+    animation: slideLeft 0.5s forwards;
+    display: none;
+  }
+
+  &.slide-out-right {
+    animation: slideRight 0.5s forwards;
+    display: none;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
