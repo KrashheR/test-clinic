@@ -1,0 +1,22 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60vw;
+
+  @media (min-width: $screen-laptop) {
+    width: 400px;
+    gap: 20px;
+  }
+
+  &__input, &__select {
+    border: none;
+    border-bottom: 2px solid $button-green-bg-color;
+    padding: 10px 5px;
+  }
+
+  &__title {
+    color: $text-green-color;
+    text-align: center;
+  }
+}

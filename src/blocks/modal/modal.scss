@@ -1,0 +1,23 @@
+.modal {
+  border-radius: 5px;
+  border: none;
+
+  &__button {
+    height: 34px;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid $button-green-bg-color;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: transparent;
+    color: $text-green-color;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-white-color;
+      background-color: $button-green-bg-color;
+    }
+  }
+}
+

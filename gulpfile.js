@@ -13,7 +13,8 @@ const rigger = require('gulp-rigger');
 const concat = require('gulp-concat');
 const webp = require('gulp-webp');
 const browserSync = require('browser-sync').create();
-const ghPages = require('gulp-gh-pages');
+
+const ghPages = require('gh-pages');
 
 function serve() {
   browserSync.init({
@@ -109,8 +110,13 @@ function watchFiles() {
 }
 
 function deployGhPages() {
-  return src("./dist/**/*")
-    .pipe(ghPages());
+  ghPages.publish('dist', function(err) {
+    if (err) {
+      console.error('Ошибка публикации: ', err);
+    } else {
+      console.log('Публикация выполнена успешно.');
+    }
+  });
 }
 
 function jsonData() {

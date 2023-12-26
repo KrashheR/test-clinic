@@ -1,0 +1,20 @@
+.confirmationDialog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60vw;
+
+  @media (min-width: $screen-laptop) {
+    width: 400px;
+    gap: 10px;
+  }
+
+  &__title {
+    color: $text-green-color;
+    text-align: center;
+  }
+
+  &__description {
+    margin-top: 10px;
+  }
+}

@@ -1,10 +1,21 @@
-  const showDialogBtn = document.querySelectorAll('button');
-  const myDialog = document.querySelector('#modal');
+document.addEventListener('DOMContentLoaded', function() {
+  const modals = document.querySelectorAll(".modal");
+  const closeModalButtons = document.querySelectorAll('.modal__close-button');
 
-
-  showDialogBtn.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      myDialog.showModal();
+  closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal');
+      if (modal) {
+        modal.close();
+      }
     });
-  })
+  });
 
+  modals.forEach((modal) => {
+    modal.addEventListener('click', (event) => {
+      if(event.target.classList.contains('modal')) {
+        modal.close();
+      }
+    });
+  });
+});

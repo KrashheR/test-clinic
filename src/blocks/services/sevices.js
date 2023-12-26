@@ -1,14 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
   const contents = document.querySelectorAll('.services-card__content');
   const pictures = document.querySelectorAll('.services-card__picture');
+
   const navLeftButton = document.querySelector('.services__nav-button_left');
   const navRightButton = document.querySelector('.services__nav-button_right');
+
   const currentCardIndicator = document.querySelector('.services__card-current');
   const totalCardsIndicator = document.querySelector('.services__card-total');
+  totalCardsIndicator.textContent = `/${contents.length}`;
+
   let currentIndex = 0;
   let previousIndex = -1;
-
-  totalCardsIndicator.textContent = `/${contents.length}`;
 
   function updateCardVisibility() {
     if (previousIndex >= 0) {

@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet">
+  <meta name="keywords" content="Клиника, анализы, лечение, здоровье, тестовое">
+  <meta name="description" content="Этот сайт - тестовое задание в компанию Rocket Business">
   <link href="css/style.min.css" rel="stylesheet">
   <title>Кучеренко Никита Тестовое</title>
 </head>
@@ -37,7 +36,7 @@
             <p class="contact__number">+7(863) 000 00 00</p>
             <p class="contact__city">Ростов-на-Дону</p>
         </div>
-        <button class="button button_header">Записаться на прием</button>
+        <button class="button button_header button_сontactForm">Записаться на прием</button>
         </div>
       </div>
     </div>
@@ -61,7 +60,7 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <button class="button button_navigation">Записаться на прием</button>
+          <button class="button button_navigation button_сontactForm">Записаться на прием</button>
         </nav>
       </div>
     </div>
@@ -71,8 +70,8 @@
       <div class="container">
         <div class="clinic-info__container">
           <picture class="clinic-info__picture">
-            <source srcset="/images/clinicPhotoDesktop.webp" media=(min-width:652px)>
-            <img class="clinic-info__image" src="/images/clinicPhoto.webp" alt="Фотография клиники">
+            <source srcset="images/clinicPhotoDesktop.webp" media=(min-width:652px)>
+            <img class="clinic-info__image" src="images/clinicPhoto.webp" alt="Фотография клиники">
           </picture>
           <div class="clinic-info__content">
             <h1 class="clinic-info__title">Многопрофильная клиника для детей и взрослых</h1>
@@ -85,25 +84,25 @@
       <div class="services-card">
         <div class="services-card__pictures-wrapper">
           <picture class="services-card__picture services-card__picture_active">
-            <source srcset="/images/contentPicture1Desktop.webp" media=(min-width:652px)>
-            <img class="services-card__image" src="/images/contentPicture1.webp" alt="Фотография услуги"/>
+            <source srcset="images/contentPicture1Desktop.webp" media=(min-width:652px)>
+            <img class="services-card__image" src="images/contentPicture1.webp" alt="Фотография услуги">
           </picture>
           <picture class="services-card__picture">
-            <source srcset="/images/contentPicture2Desktop.webp" media=(min-width:652px)>
-            <img class="services-card__image" src="/images/contentPicture2.webp" alt="Фотография услуги"/>
+            <source srcset="images/contentPicture2Desktop.webp" media=(min-width:652px)>
+            <img class="services-card__image" src="images/contentPicture2.webp" alt="Фотография услуги" loading="lazy">
           </picture>
           <picture class="services-card__picture">
-            <source srcset="/images/contentPicture3Desktop.webp" media=(min-width:652px)>
-            <img class="services-card__image" src="/images/contentPicture3.webp" alt="Фотография услуги"/>
+            <source srcset="images/contentPicture3Desktop.webp" media=(min-width:652px)>
+            <img class="services-card__image" src="images/contentPicture3.webp" alt="Фотография услуги" loading="lazy">
           </picture>
           <picture class="services-card__picture">
-            <source srcset="/images/contentPicture4Desktop.webp" media=(min-width:652px)>
-            <img class="services-card__image" src="/images/contentPicture4.webp" alt="Фотография услуги"/>
+            <source srcset="images/contentPicture4Desktop.webp" media=(min-width:652px)>
+            <img class="services-card__image" src="images/contentPicture4.webp" alt="Фотография услуги" loading="lazy">
           </picture>
         </div>
         <div class="services-card__content-wrapper">
           <div class="services-card__content services-card__content_active">
-            <h3 class="services-card__title">Check-UP</h3>
+            <h2 class="services-card__title">Check-UP</h2>
             <p class="services-card__subtitle">для мужчин</p>
             <ul class="services-card__list">
               <li class="services-card__list-item">Гормональный скрининг</li>
@@ -116,12 +115,12 @@
               <span class="services-card__old-price">3500₽</span>
             </div>
             <div class="services-card__buttons">
-              <button class="button">Записаться</button>
-              <button class="button button_details">Подробнее</button>
+              <button class="button button_сontactForm">Записаться</button>
+              <button class="button button_details button_сontactForm">Подробнее</button>
             </div>
           </div>
           <div class="services-card__content">
-            <h3 class="services-card__title">Check-UP 2</h3>
+            <h2 class="services-card__title">Check-UP 2</h2>
             <p class="services-card__subtitle">для женщин</p>
             <ul class="services-card__list">
               <li class="services-card__list-item">Гормональный скрининг</li>
@@ -134,17 +133,35 @@
               <span class="services-card__old-price">3500₽</span>
             </div>
             <div class="services-card__buttons">
-              <button class="button">Записаться</button>
-              <button class="button button_details">Подробнее</button>
+              <button class="button button_сontactForm">Записаться</button>
+              <button class="button button_details button_сontactForm">Подробнее</button>
             </div>
           </div>
           <div class="services-card__content">
-            <h3 class="services-card__title">Check-UP 3</h3>
+            <h2 class="services-card__title">Check-UP 3</h2>
             <p class="services-card__subtitle">для котов</p>
             <ul class="services-card__list">
               <li class="services-card__list-item">Уровень рыбов в крови</li>
-              <li class="services-card__list-item">Тестостерон</li>
+              <li class="services-card__list-item">Проверка силы "Кусь"</li>
               <li class="services-card__list-item">Оценка произношения "МЯУ"</li>
+              <li class="services-card__list-item">Погладить</li>
+            </ul>
+            <div class="services-card__pricing">
+              <span class="services-card__price">Всего 2800₽</span>
+              <span class="services-card__old-price">3500₽</span>
+            </div>
+            <div class="services-card__buttons">
+              <button class="button button_сontactForm">Записаться</button>
+              <button class="button button_details button_сontactForm">Подробнее</button>
+            </div>
+          </div>
+          <div class="services-card__content">
+            <h2 class="services-card__title">Check-UP 4</h2>
+            <p class="services-card__subtitle">для собак</p>
+            <ul class="services-card__list">
+              <li class="services-card__list-item">Уровень корма в крови</li>
+              <li class="services-card__list-item">Научить давать лапу</li>
+              <li class="services-card__list-item">Попросить не купаться в грязи</li>
               <li class="services-card__list-item">Груминг</li>
             </ul>
             <div class="services-card__pricing">
@@ -152,26 +169,8 @@
               <span class="services-card__old-price">3500₽</span>
             </div>
             <div class="services-card__buttons">
-              <button class="button">Записаться</button>
-              <button class="button button_details">Подробнее</button>
-            </div>
-          </div>
-          <div class="services-card__content">
-            <h3 class="services-card__title">Check-UP 4</h3>
-            <p class="services-card__subtitle">для собак</p>
-            <ul class="services-card__list">
-              <li class="services-card__list-item">Гормональный скрининг</li>
-              <li class="services-card__list-item">Тестостерон</li>
-              <li class="services-card__list-item">Свободный тестостерон</li>
-              <li class="services-card__list-item">Глобулин, связывающий половые гормоны</li>
-            </ul>
-            <div class="services-card__pricing">
-              <span class="services-card__price">Всего 2800₽</span>
-              <span class="services-card__old-price">3500₽</span>
-            </div>
-            <div class="services-card__buttons">
-              <button class="button">Записаться</button>
-              <button class="button button_details">Подробнее</button>
+              <button class="button button_сontactForm">Записаться</button>
+              <button class="button button_details button_сontactForm">Подробнее</button>
             </div>
           </div>
         </div>
@@ -185,28 +184,27 @@
         <a class="services__nav-button services__nav-button_right"></a>
       </div>
     </section>
-    <dialog class="modal" id="modal">
-      <div class="modal__content">
-        <form id="contactForm" action="php/submitForm.php">
-          <input type="text" id="firstName" placeholder="Имя" required>
-          <input type="text" id="lastName" placeholder="Фамилия" required>
-          <input type="tel" id="phone" placeholder="Телефон" pattern="[\+7|8][0-9]{10}" required>
-          <select id="service" required>
-            <option value="" disabled selected>Выберите услугу</option>
-            <option value="men">Check-up для мужчин</option>
-            <option value="women">Check-up для женщин</option>
-            <option value="cats">Check-up для котов</option>
-            <option value="dogs">Check-up для собак</option>
-          </select>
-          <button type="submit">Отправить</button>
-        </form>
-      </div>
+    <dialog class="modal" id="contactFormDialog">
+      <form class="contactForm" action="php/submitForm.php" method="post">
+        <h2 class="contactForm__title">Укажите ваши данные</h2>
+        <input class="contactForm__input" type="text" name="firstName" id="firstName" placeholder="Имя" required>
+        <input class="contactForm__input" type="text" name="lastName" id="lastName" placeholder="Фамилия" required>
+        <input class="contactForm__input" type="tel" name="phone" id="phone" placeholder="Телефон" pattern="(\+7|8)[0-9]{10}" required>
+        <select class="contactForm__select" name="service" id="service" required>
+          <option value="" disabled selected>Выберите услугу</option>
+          <option value="Check-up для мужчин">Check-up для мужчин</option>
+          <option value="Check-up для женщин">Check-up для женщин</option>
+          <option value="Check-up для котов">Check-up для котов</option>
+          <option value="Check-up для собак">Check-up для собак</option>
+        </select>
+        <button class="modal__button contactForm__button" type="submit">Записаться</button>
+      </form>
     </dialog>
-
-    <dialog class="modal" id="confirmationModal" style="display: none;">
-      <div class="modal__content">
-        <p>Менеджер свяжется с вами в течении 15 минут</p>
-        <button id="closeButton">Закрыть</button>
+    <dialog class="modal" id="confirmationDialog">
+      <div class="confirmationDialog">
+        <h2 class="confirmationDialog__title">Заявка создана!</h2>
+        <p class="confirmationDialog__description">Менеджер свяжется с вами в течении 15 минут</p>
+        <button class="modal__button modal__close-button">Закрыть</button>
       </div>
     </dialog>
   </main>
@@ -214,7 +212,7 @@
     <div class="container">
       <div class="footer__top">
         <a class="logo__link logo__link_footer" href="#">
-          <img class="logo__image logo__image_footer" src="/images/logoWhite.svg" alt="Логотип компании">
+          <img class="logo__image logo__image_footer" src="images/logoWhite.svg" alt="Логотип компании">
         </a>
         <nav class="footer__nav footer__nav_desktop">
           <ul class="navigation__list navigation__list_footer">
@@ -237,13 +235,13 @@
         </nav>
         <div class="footer__socials">
           <a href="#" class="footer__social-link">
-            <img class="footer__social-image" src="/images/instagram.svg" alt="Логотип Instagram">
+            <img class="footer__social-image" src="images/instagram.svg" alt="Логотип Instagram">
           </a>
           <a href="#" class="footer__social-link">
-            <img class="footer__social-image" src="/images/whatsapp.svg" alt="Логотип WhatsApp">
+            <img class="footer__social-image" src="images/whatsapp.svg" alt="Логотип WhatsApp">
           </a>
           <a href="#" class="footer__social-link">
-            <img class="footer__social-image" src="/images/telegram.svg" alt="Логотип Telegram">
+            <img class="footer__social-image" src="images/telegram.svg" alt="Логотип Telegram">
           </a>
         </div>
       </div>
