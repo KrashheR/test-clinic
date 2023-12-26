@@ -4,6 +4,10 @@
   z-index: 5;
   background-color: $background-white-color;
 
+  @media (min-width: $screen-laptop) {
+    background-color: $background-white-desktop-color;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -17,7 +21,7 @@
     gap: 43px;
 
     @media (min-width: $screen-laptop) {
-      gap: 20.5px;
+      gap: 23px;
     }
   }
 

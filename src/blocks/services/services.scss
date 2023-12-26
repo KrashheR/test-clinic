@@ -3,29 +3,54 @@
   flex-direction: column;
   align-items: center;
   padding-top: 49px;
-  padding-bottom: 41px;
+  padding-bottom: 35px;
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 100px;
+    padding-bottom: 92px;
+  }
 
   &__navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 22px;
+    margin-top: 21px;
     gap: 36px;
+    height: 34px;
 
-    &__nav-button {
-      border: none;
-      background: none;
-      cursor: pointer;
+    @media (min-width: $screen-desktop) {
+      margin-top: 35px;
+    }
+  }
 
-      img{
-        width: 34px;
-        height: 34px;
-      }
+  &__nav-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    transition: all 0.3s ease;
+  }
+
+  &__nav-button_right{
+    background-image: url("../images/rightArrow.svg");
+
+    &:hover{
+      background-image: url("../images/rightArrowActive.svg");
+    }
+  }
+
+  &__nav-button_left{
+    background-image: url("../images/leftArrow.svg");
+
+    &:hover{
+      background-image: url("../images/leftArrowActive.svg");
     }
   }
 
   &__card-numbers {
     display: flex;
+    font-size: 18px;
   }
 
   &__card-current {
@@ -33,6 +58,6 @@
   }
 
   &__card-total {
-    color: $text-gray-color;
+    color: $text-light-gray-color;
   }
 }

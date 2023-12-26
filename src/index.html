@@ -11,38 +11,150 @@
   <title>Кучеренко Никита Тестовое</title>
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <div class="header__top">
-      <div class="header__top-left">
-        <div class="hamburger">
-          <span class="top-bar"></span>
-          <span class="mid-bar"></span>
-          <span class="bot-bar"></span>
-        </div >
-        <img class="logo" src="images/logoGreen.svg" alt="Логотип компании">
-        <div class="address">
-          <div class="address__left-side"><img class="address__icon" src="images/placeholder.svg" alt="Местоположение"></div>
-          <div class="address__right-side">
-            <p class="address__city">Ростов-на-Дону</p>
-            <p class="address__additional-info">ул. Ленина, 2Б</p>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__top-left">
+          <div class="hamburger">
+            <span class="top-bar"></span>
+            <span class="mid-bar"></span>
+            <span class="bot-bar"></span>
+          </div >
+          <a class="logo__link" href="#">
+            <img class="logo__image" src="images/logoGreen.svg" alt="Логотип компании">
+          </a>
+          <div class="address">
+            <div class="address__left-side"><img class="address__icon" src="images/placeholder.svg" alt="Местоположение"></div>
+            <div class="address__right-side">
+              <p class="address__city">Ростов-на-Дону</p>
+              <p class="address__additional-info">ул. Ленина, 2Б</p>
+            </div>
+          </div>
+        </div>
+        <div class="header__top-right">
+          <div class="contact">
+            <img src="images/headerWhatsapp.svg" alt="WhatsApp" class="contact__icon">
+            <p class="contact__number">+7(863) 000 00 00</p>
+            <p class="contact__city">Ростов-на-Дону</p>
+        </div>
+        <button class="button button_header">Записаться на прием</button>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#">О клинике</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Специалисты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Цены</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="button button_navigation">Записаться на прием</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="clinic-info">
+      <div class="container">
+        <div class="clinic-info__container">
+          <picture class="clinic-info__picture">
+            <source srcset="/images/clinicPhotoDesktop.webp" media=(min-width:652px)>
+            <img class="clinic-info__image" src="/images/clinicPhoto.webp" alt="Фотография клиники">
+          </picture>
+          <div class="clinic-info__content">
+            <h1 class="clinic-info__title">Многопрофильная клиника для детей и взрослых</h1>
+            <p class="clinic-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           </div>
         </div>
       </div>
-      <div class="header__top-right">
-        <div class="contact">
-          <img src="images/whatsapp.svg" alt="WhatsApp" class="contact__icon">
-          <p class="contact__number">+7(863) 000 00 00</p>
-          <p class="contact__city">Ростов-на-Дону</p>
+    </section>
+    <section class="services">
+      <div class="services-card">
+        <picture class="services-card__picture">
+          <source srcset="/images/doctorDesktop.webp" media=(min-width:652px)>
+          <img class="services-card__image" src="/images/doctor.webp" alt="Фотография услуги"/>
+        </picture>
+        <div class="services-card__content">
+          <h3 class="services-card__title">Check-UP</h3>
+          <p class="services-card__subtitle">для мужчин</p>
+          <ul class="services-card__list">
+            <li class="services-card__list-item">Гормональный скрининг</li>
+            <li class="services-card__list-item">Тестостерон</li>
+            <li class="services-card__list-item">Свободный тестостерон</li>
+            <li class="services-card__list-item">Глобулин, связывающий половые гормоны</li>
+          </ul>
+          <div class="services-card__pricing">
+            <span class="services-card__price">Всего 2800₽</span>
+            <span class="services-card__old-price">3500₽</span>
+          </div>
+          <div class="services-card__buttons">
+            <button class="button">Записаться</button>
+            <button class="button button_details">Подробнее</button>
+          </div>
+        </div>
       </div>
-      <button class="button button_header-desktop">Записаться на прием</button>
+      <div class="services__navigation">
+        <a class="services__nav-button services__nav-button_left"></a>
+        <div class="services__card-numbers">
+          <span class="services__card-current">1</span>
+          <span class="services__card-total">/4</span>
+        </div>
+        <a class="services__nav-button services__nav-button_right"></a>
       </div>
-    </div>
-  </div>
-  <div class="header__bottom">
+    </section>
+  </main>
+  <footer class="footer">
     <div class="container">
-      <nav class="navigation">
-        <ul class="navigation__list">
+      <div class="footer__top">
+        <a class="logo__link" href="#">
+          <img class="logo__image" src="/images/logoWhite.svg" alt="Логотип компании">
+        </a>
+        <nav class="footer__nav footer__nav_desktop">
+          <ul class="navigation__list navigation__list_footer">
+            <li class="navigation__item">
+              <a href="#">О клинике</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Специалисты</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Цены</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link">
+            <img class="footer__social-image" src="/images/instagram.svg" alt="Логотип Instagram">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img class="footer__social-image" src="/images/whatsapp.svg" alt="Логотип WhatsApp">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img class="footer__social-image" src="/images/telegram.svg" alt="Логотип Telegram">
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <ul class="navigation__list navigation__list_footer">
           <li class="navigation__item">
             <a href="#">О клинике</a>
           </li>
@@ -59,63 +171,9 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <button class="button button_header-mobile">Записаться на прием</button>
       </nav>
     </div>
-  </div>
-</header>
-<main>
-  <section class="clinic-info">
-    <img class="clinic-info__image" src="/images/clinicPhoto.webp" alt="Фотография клиники">
-    <div class="container">
-      <div class="clinic-info__content">
-        <h1 class="clinic-info__title">Многопрофильная клиника для детей и взрослых</h1>
-        <p class="clinic-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-      </div>
-    </div>
-  </section>
-  <section class="services">
-    <div class="services-card">
-      <img class="services-card__image" src="/images/doctor.webp" alt="Фотография услуги"/>
-      <div class="services-card__content">
-        <h3 class="services-card__title">Check-UP</h3>
-        <p class="services-card__subtitle">для мужчин</p>
-        <ul class="services-card__list">
-          <li class="services-card__list-item">Гормональный скрининг</li>
-          <li class="services-card__list-item">Тестостерон</li>
-          <li class="services-card__list-item">Свободный тестостерон</li>
-          <li class="services-card__list-item">Глобулин, связывающий половые гормоны</li>
-        </ul>
-        <div class="services-card__pricing">
-          <span class="services-card__price">Всего 2800₽</span>
-          <span class="services-card__old-price">3500₽</span>
-        </div>
-        <div class="services-card__buttons">
-          <button class="button">Записаться</button>
-          <button class="button button_details">Подробнее</button>
-        </div>
-      </div>
-    </div>
-    <div class="services__navigation">
-      <a class="services__nav-button services__nav-button_left">
-        <img src="/images/leftArrow.svg" alt="Кнопка назад">
-      </a>
-      <div class="services__card-numbers">
-        <span class="services__card-current">1</span>
-        <span class="services__card-total">/4</span>
-      </div>
-      <a class="services__nav-button services__nav-button_right">
-        <img src="/images/rightArrow.svg" alt="Кнопка вперед">
-      </a>
-    </div>
-  </section>
-
-</main>
-
-  <footer>
-
   </footer>
-
   <script src="js/index.min.js"></script>
 </body>
 </html>

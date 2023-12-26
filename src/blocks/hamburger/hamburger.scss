@@ -19,7 +19,7 @@
 
   &_active {
     .top-bar {
-      transform: translateY(10px) rotate(45deg);
+      transform: translateY(11px) rotate(45deg);
     }
 
     .mid-bar {
@@ -27,7 +27,7 @@
     }
 
     .bot-bar {
-      transform: translateY(-10px) rotate(-45deg);
+      transform: translateY(-11px) rotate(-45deg);
     }
 
   }

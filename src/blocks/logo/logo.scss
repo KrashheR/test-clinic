@@ -1,9 +1,23 @@
 .logo {
-  width: 62px;
-  height: 18.32px;
 
-  @media (min-width: $screen-laptop) {
-    width: 91.043px;
-    height: 26.901px;
+  &__image{
+    width: 62px;
+    height: 18.32px;
+
+    @media (min-width: $screen-laptop) {
+      width: 91.043px;
+      height: 26.901px;
+    }
   }
+
+  &__link{
+    width: 62px;
+    height: 18.32px;
+
+    @media (min-width: $screen-laptop) {
+      width: 91.043px;
+      height: 26.901px;
+    }
+  }
+
 }

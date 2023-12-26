@@ -45,3 +45,7 @@ body, p, h1, h2, h3, ul {
   margin: 0;
   padding: 0;
 }
+
+main {
+  min-height: calc(100vh - 144px - 110px);
+}

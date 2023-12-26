@@ -28,6 +28,8 @@
     gap: 10px;
     padding-top: 48px;
     padding-bottom: 39px;
+    font-size: 16px;
+    line-height: 24px;
 
     @media (min-width: $screen-laptop) {
       flex-direction: row;
@@ -36,11 +38,25 @@
       padding-bottom: 9px;
       padding-left: 0;
     }
+
+    &_footer{
+      padding-top: 31px;
+      padding-bottom: 0;
+      gap: 15px;
+      font-size: 14px;
+      line-height: normal;
+
+      @media (min-width: $screen-laptop) {
+        padding: 0;
+        gap: 30px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
   }
 
   &__item {
-    font-size: 16px;
-    line-height: 24px;
+
     color: $text-white-color;
   }
 }

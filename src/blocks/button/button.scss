@@ -1,5 +1,5 @@
 .button {
-  width: 50%;
+  width: 137px;
   height: 43px;
   flex-shrink: 0;
   border: none;
@@ -11,12 +11,17 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media (min-width: $screen-desktop) {
+    width: 196px;
+  }
+
   &:hover {
     background-color: $button-bg-hover-color;
   }
 
-  &_header-mobile {
+  &_navigation {
     display: block;
+    width: 196px;
     background-color: $button-white-bg-color;
     color: $button-green-text-color;
     font-weight: 700;
@@ -26,17 +31,18 @@
     }
   }
 
-  &_header-desktop {
+  &_header {
     display: none;
 
     @media (min-width: $screen-laptop) {
+      width: 196px;
       display: block;
     }
   }
 
   &_details {
     background-color: transparent;
-    border: 2px solid $button-green-bg-color;
+    border: 1px solid $button-green-bg-color;
     color: $text-green-color;
 
     &:hover {
