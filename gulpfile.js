@@ -63,6 +63,12 @@ function js() {
     .pipe(browserSync.reload({ stream: true }));
 }
 
+function php() {
+  return src('src/php/**/*.php')
+    .pipe(dest('dist/php/'))
+    .pipe(browserSync.reload({ stream: true }));
+}
+
 function images() {
   return src('src/assets/images/*.{jpg,jpeg,png,svg,gif,ico,webp,xml}')
     .pipe(imagemin([
@@ -88,7 +94,7 @@ function fonts() {
     .pipe(browserSync.reload({ stream: true }));
 }
 
-function clean() {
+  function clean() {
   return del('./dist');
 }
 
@@ -96,6 +102,7 @@ function watchFiles() {
   gulp.watch(['src/**/*.html'], html);
   gulp.watch(['src/**/*.scss'], css);
   gulp.watch(['src/**/*.js'], js);
+  gulp.watch(['src/php/**/*.php'], php);
   gulp.watch(['src/**/*.{jpg,jpeg,png,svg,gif,ico,webp,xml}'], images);
   gulp.watch(['src/assets/fonts/*.woff2'], fonts);
   gulp.watch(['src/data/*.json'], jsonData);
@@ -112,7 +119,7 @@ function jsonData() {
     .pipe(browserSync.reload({ stream: true }));
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts, jsonData));
+const build = gulp.series(clean, gulp.parallel(html, css, js, php, images, fonts, jsonData));
 const watch = gulp.parallel(build, watchFiles, serve);
 const deploy = gulp.series(build, deployGhPages);
 
@@ -120,6 +127,7 @@ exports.fonts = fonts;
 exports.html = html;
 exports.css = css;
 exports.js = js;
+exports.php = php;
 exports.images = images;
 exports.clean = clean;
 exports.build = build;

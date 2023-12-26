@@ -185,6 +185,30 @@
         <a class="services__nav-button services__nav-button_right"></a>
       </div>
     </section>
+    <dialog class="modal" id="modal">
+      <div class="modal__content">
+        <form id="contactForm" action="php/submitForm.php">
+          <input type="text" id="firstName" placeholder="Имя" required>
+          <input type="text" id="lastName" placeholder="Фамилия" required>
+          <input type="tel" id="phone" placeholder="Телефон" pattern="[\+7|8][0-9]{10}" required>
+          <select id="service" required>
+            <option value="" disabled selected>Выберите услугу</option>
+            <option value="men">Check-up для мужчин</option>
+            <option value="women">Check-up для женщин</option>
+            <option value="cats">Check-up для котов</option>
+            <option value="dogs">Check-up для собак</option>
+          </select>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="confirmationModal" style="display: none;">
+      <div class="modal__content">
+        <p>Менеджер свяжется с вами в течении 15 минут</p>
+        <button id="closeButton">Закрыть</button>
+      </div>
+    </dialog>
   </main>
   <footer class="footer">
     <div class="container">
